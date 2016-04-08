@@ -1,0 +1,7 @@
+:root {
+  --red: #d33;
+}
+
+body {
+  background-color: color(var(--red) a(25%));
+}

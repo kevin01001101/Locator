@@ -1,0 +1,6 @@
+{
+  "use": "postcss-cssnext",
+  "input": ["src/css/demo.css", "src/css/demo0.css"],
+  "dir": "/webapp/dev/css",
+  "watch": true
+}

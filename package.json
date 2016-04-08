@@ -1,0 +1,30 @@
+{
+  "name": "testproject",
+  "version": "0.1.0",
+  "description": "Just a simple project for testing things.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Kevin Milam",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "express": "^4.13.4",
+    "jasmine-core": "^2.4.1",
+    "postcss-cssnext": "^2.5.2",
+    "postcss-loader": "^0.8.2",
+    "style-loader": "^0.13.1",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.12",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

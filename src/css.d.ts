@@ -1,0 +1,10 @@
+declare module "main.css" {
+  var _temp: any;
+  export = _temp;
+}
+
+declare var require: {
+  <T>(path: string): T;
+  (paths: string[], callback: (...modules: any[]) => void): void;
+  ensure: (paths: string[], callback: (require: <T>(path: string) => T) => void) => void;
+};
