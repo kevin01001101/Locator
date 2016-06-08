@@ -5,6 +5,7 @@
     "react-dom": "registry:dt/react-dom#0.14.0+20160316155526"
   },
   "dependencies": {
-    "lodash": "registry:npm/lodash#4.0.0+20160305082308"
+    "lodash": "registry:npm/lodash#4.0.0+20160305082308",
+    "react-router": "registry:npm/react-router#2.0.0+20160214194820"
   }
 }

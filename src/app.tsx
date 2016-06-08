@@ -3,15 +3,13 @@
 
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import * as hello from './hello';
+import { Router, Route, Link, IndexRoute, hashHistory } from 'react-router';
+
 
 
 // Remove this for production builds
 require('../css/main.css');
 
-
-hello.runMe();
-console.log("this deal?");
 
 interface ReactProps {
   name: string;
@@ -20,9 +18,30 @@ interface ReactProps {
 class MyReactClass extends React.Component<ReactProps, any> {
   render() {
     return (
-      <div>I am the walrus.. {this.props.name}</div>
+      <div>I am the egg man.. {this.props.name}</div>
     );
   }
 }
 
-ReactDOM.render(<MyReactClass name='billy'/>, document.getElementById('myReactNode'));
+
+
+interface YoloProps {
+  name: string;
+}
+
+class Yolo extends React.Component<YoloProps, any> {
+  render() {
+    return (
+      <div>I am the egg man.. {this.props.name}</div>
+    );
+  }
+}
+
+
+ReactDOM.render((
+  <Router history={hashHistory} >
+    <Route path="/" component={MyReactClass} >
+      <IndexRoute component={Yolo} />
+    </Route>
+  </Router>
+), document.getElementById('myReactNode'));
