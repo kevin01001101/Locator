@@ -3,3 +3,4 @@ dev
 dist
 typings
 src/js
+src/libs

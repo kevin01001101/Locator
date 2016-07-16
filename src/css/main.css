@@ -4,4 +4,5 @@
 
 body {
   background-color: color(var(--red) a(90%));
+  padding-top:70px;
 }
